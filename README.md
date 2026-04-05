@@ -18,5 +18,5 @@ Run your own Runescape: Dragonwilds server with Docker, Tailscale, and Traefik o
 
 ## YouTube Video Link
 
-[Watch the setup guide here]()
+[Watch the setup guide here](https://www.youtube.com/watch?v=M8jxPDxR4W4)
 
