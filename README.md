@@ -42,14 +42,16 @@ Configure these in `home-server/.env`:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SERVER_PORT` | 45000 | Game server port (UDP) |
-| `TZ` | America/New_York | Timezone for backups |
-| `BACKUP_TIME` | 3:00 AM | Daily backup schedule |
-| `BACKUP_DAILY` | true | Enable daily backups |
-| `BACKUP_AFTER_UPDATE` | true | Backup before auto-updates |
+| `SERVER_PORT` | 45000 | UDP port for server connections |
+| `TZ` | UTC | Timezone for scheduled backups |
 | `ENABLE_AUTO_UPDATE` | true | Enable automatic server updates |
+| `UPDATE_TIME` | 3600 | Seconds between update checks (default: 1 hour) |
+| `BACKUP_AFTER_UPDATE` | true | Backup saves after each update |
+| `BACKUP_DAILY` | true | Run daily scheduled backup |
+| `BACKUP_TIME` | 3:00 AM | Daily backup time (12-hour format with AM/PM) |
 | `BACKUP_RETENTION_DAYS` | 30 | Days to keep backups |
-| `ENABLE_DISCORD_NOTIF` | false | Enable Discord webhooks |
+| `IDLE_WAIT` | 360 | Seconds to wait for no players before update/backup (default: 6 min) |
+| `ENABLE_DISCORD_NOTIF` | false | Enable Discord webhook notifications |
 | `DISCORD_WEBHOOK_URL` | (empty) | Discord webhook URL |
 
 ### Tailscale Variables
